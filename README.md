@@ -110,7 +110,7 @@ Rank	Model Name	Accuracy (%)	Year
 4	ALBERT-xxlarge	91.8	2020
 5	RoBERTa-large	91.7	2019
 6	CoAttentionNLI	91.0	2025
-
+----
 ⚠️ Note:
 Due to Google Colab session time limits, the training was interrupted at epoch 10. Based on the observed performance trajectory, it is highly likely that the model would have achieved a top-3 position on the SNLI leaderboard with full training.
 

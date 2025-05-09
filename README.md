@@ -53,3 +53,48 @@ The system leverages both token-level and sentence-level semantics:
       └─────────────────────────────────────┘
                         ↓
               Final Prediction (3 classes)
+---
+
+**📂 Datasets Used**
+Dataset	Description
+SNLI	Pretraining & curriculum start
+MNLI	Fine-tuning with class difficulty
+Matched	Standard validation evaluation
+Mismatched	Robustness test with domain shift
+
+Each dataset is pre-annotated with:
+
+SBERT embeddings (premise_sbert, hypothesis_sbert)
+
+Difficulty labels: easy, medium, hard
+
+Similarity scores (SBERT cosine)
+
+---
+
+**🧪 Training Summary**
+Mixed Precision (AMP)
+
+Optimizer: Lookahead + AdamW
+
+LR Scheduler: ReduceLROnPlateau
+
+Epochs: 10 (SNLI), 25 (MNLI)
+
+Batch Size: 64
+
+Early Stopping with patience = 2
+
+---
+
+
+**📈 Evaluation Features**
+classification_report (precision, recall, F1)
+
+Confusion Matrix (Seaborn)
+
+High-Confidence Mistake Logging
+
+Loss Histogram for instance-level error inspection
+
+Most-Confused Class Sample Display

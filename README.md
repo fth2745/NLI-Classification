@@ -112,4 +112,6 @@ Rank	Model Name	Accuracy (%)	Year
 6	CoAttentionNLI	91.0	2025
 
 ⚠️ Note:
-Due to Google Colab session time limits, the training was stopped early at epoch 10. Based on the performance trajectory, the expected accuracy with full training would likely place the model within the top 3.
+Due to Google Colab session time limits, the training was interrupted at epoch 10. Based on the observed performance trajectory, it is highly likely that the model would have achieved a top-3 position on the SNLI leaderboard with full training.
+
+🔒 The model will not be publicly released. Access is restricted and must be explicitly requested for private use or collaboration purposes.

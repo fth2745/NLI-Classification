@@ -103,15 +103,15 @@ Most-Confused Class Sample Display
 🔢 SNLI Leaderboard Position
 Your CoAttentionNLI model achieved 91.0% accuracy on the SNLI (Stanford Natural Language Inference) dataset. According to the latest benchmark rankings from Papers With Code, this places the model as follows:
 
-Rank	Model Name	Accuracy (%)	Year
-1	UnitedSynT5 (3B)	94.7	2024
-2	EFL (Entailment FSL)	93.1	2021
-3	DeBERTa-v3-large	91.9	2021
-4	ALBERT-xxlarge	91.8	2020
-5	RoBERTa-large	91.7	2019
-6	CoAttentionNLI	91.0	2025
-----
-⚠️ Note:
-Due to Google Colab session time limits, the training was interrupted at epoch 10. Based on the observed performance trajectory, it is highly likely that the model would have achieved a top-3 position on the SNLI leaderboard with full training.
+| Rank | Model Name            | Accuracy (%) | Year |
+|------|------------------------|--------------|------|
+| 1    | UnitedSynT5 (3B)       | 94.7         | 2024 |
+| 2    | EFL (Entailment FSL)   | 93.1         | 2021 |
+| 3    | DeBERTa-v3-large       | 91.9         | 2021 |
+| 4    | ALBERT-xxlarge         | 91.8         | 2020 |
+| 5    | RoBERTa-large          | 91.7         | 2019 |
+| 6    | **CoAttentionNLI**     | **91.0**     | 2025 |
 
-🔒 The model will not be publicly released. Access is restricted and must be explicitly requested for private use or collaboration purposes.
+> ⚠️ **Note**: Due to Google Colab session time limits, the training was interrupted at epoch 10. Based on the observed trajectory, the model was on track to reach **top-3** performance.
+> 
+> 🔒 **This model is not publicly released** and must be explicitly requested for private use or research collaboration.

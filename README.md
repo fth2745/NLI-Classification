@@ -58,7 +58,6 @@ The system leverages both token-level and sentence-level semantics:
 **📂 Datasets Used**
 Dataset	Description
 SNLI	Pretraining & curriculum start
-MNLI	Fine-tuning with class difficulty
 Matched	Standard validation evaluation
 Mismatched	Robustness test with domain shift
 
@@ -79,7 +78,7 @@ Optimizer: Lookahead + AdamW
 
 LR Scheduler: ReduceLROnPlateau
 
-Epochs: 10 (SNLI), 25 (MNLI)
+Epochs: 10 (SNLI)
 
 Batch Size: 64
 
